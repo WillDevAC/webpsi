@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense } from "react";
 import { Card, Grid } from "@mui/material";
 import { LoginForm } from "@/components/forms/login-form";
 import { FeatureSection } from "@/components/feature-section";
@@ -38,7 +38,11 @@ const AuthPageContent = () => (
 
 export default function AuthPage() {
   return (
-    <Suspense fallback={<div>Aguarde...</div>}>
+    <Suspense
+      fallback={
+        <div className="h-screen w-screen bg-gradient-to-r from-[#a023da] via-[#a023da] to-[#6c1b92]"></div>
+      }
+    >
       <AuthPageContent />
     </Suspense>
   );
