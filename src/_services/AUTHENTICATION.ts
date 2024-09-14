@@ -40,7 +40,7 @@ export function authenticationServiceWithCredentials() {
         router.replace("/auth/signIn?referrer=unauthorized-user");
       } else {
         setError(null);
-        router.replace("/home");
+        router.replace("/home/");
       }
 
       console.log("[LOGIN_RESPONSE]: ", response);
