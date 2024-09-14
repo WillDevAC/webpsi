@@ -13,7 +13,8 @@ import { Google } from "@mui/icons-material";
 
 import LoadingButton from "@mui/lab/LoadingButton";
 
-import { authenticationServiceWithCredentials } from "@/_services/authentication";
+import { authenticationServiceWithCredentials } from "@/_services/AUTHENTICATION";
+
 
 export function LoginForm() {
   const { register, handleSubmit, errors, error, onSubmit, signInWithGoogle } =
