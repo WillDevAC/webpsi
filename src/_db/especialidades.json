@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "name": "Psicodrama",
+    "path": "/especialidades/Psicodrama.svg",
+    "category": "Cognitive",
+    "categoria": "Social"
+  },
+  {
+    "id": 2,
+    "name": "Psicana\u0301lise",
+    "path": "/especialidades/Psicana\u0301lise.svg",
+    "category": "Social",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 3,
+    "name": "Psicofarmacologia",
+    "path": "/especialidades/Psicofarmacologia.svg",
+    "category": "Emotional",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 4,
+    "name": "Psicopatologia",
+    "path": "/especialidades/Psicopatologia.svg",
+    "category": "Emotional",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 5,
+    "name": "Behaviorismo",
+    "path": "/especialidades/Behaviorismo.svg",
+    "category": "Emotional",
+    "categoria": "Social"
+  },
+  {
+    "id": 6,
+    "name": "EMDR",
+    "path": "/especialidades/EMDR.svg",
+    "category": "Behavioral",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 7,
+    "name": "Neuropsicologia",
+    "path": "/especialidades/Neuropsicologia.svg",
+    "category": "Emotional",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 8,
+    "name": "Psicologia_do_Idoso",
+    "path": "/especialidades/Psicologia_do_Idoso.svg",
+    "category": "Social",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 9,
+    "name": "Psicologia_da_Linguagem",
+    "path": "/especialidades/Psicologia_da_Linguagem.svg",
+    "category": "Emotional",
+    "categoria": "Social"
+  },
+  {
+    "id": 10,
+    "name": "Terapia_de_Aceitac\u0327a\u0303o_e_Compromisso_(ACT)",
+    "path": "/especialidades/Terapia_de_Aceitac\u0327a\u0303o_e_Compromisso_(ACT).svg",
+    "category": "Cognitive",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 11,
+    "name": "Psicologia_da_Crianc\u0327a",
+    "path": "/especialidades/Psicologia_da_Crianc\u0327a.svg",
+    "category": "Emotional",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 12,
+    "name": "Psicologia_do_Adolescente",
+    "path": "/especialidades/Psicologia_do_Adolescente.svg",
+    "category": "Behavioral",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 13,
+    "name": "Terapia_Cognitivo-Comportamental_(TCC)",
+    "path": "/especialidades/Terapia_Cognitivo-Comportamental_(TCC).svg",
+    "category": "Cognitive",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 14,
+    "name": "Psicologia_da_Sau\u0301de",
+    "path": "/especialidades/Psicologia_da_Sau\u0301de.svg",
+    "category": "Emotional",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 15,
+    "name": "Psicologia_Positiva",
+    "path": "/especialidades/Psicologia_Positiva.svg",
+    "category": "Social",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 16,
+    "name": "Psicologia_Escolar",
+    "path": "/especialidades/Psicologia_Escolar.svg",
+    "category": "Behavioral",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 17,
+    "name": "Teoria_do_Esquema",
+    "path": "/especialidades/Teoria_do_Esquema.svg",
+    "category": "Emotional",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 18,
+    "name": "Psicologia_do_Desenvolvimento",
+    "path": "/especialidades/Psicologia_do_Desenvolvimento.svg",
+    "category": "Behavioral",
+    "categoria": "Social"
+  },
+  {
+    "id": 19,
+    "name": "Psicologia_do_Esporte",
+    "path": "/especialidades/Psicologia_do_Esporte.svg",
+    "category": "Emotional",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 20,
+    "name": "Terapia_Gestalt",
+    "path": "/especialidades/Terapia_Gestalt.svg",
+    "category": "Social",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 21,
+    "name": "Psicologia_da_Sexualidade",
+    "path": "/especialidades/Psicologia_da_Sexualidade.svg",
+    "category": "Emotional",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 22,
+    "name": "Psicologia_da_Aprendizagem",
+    "path": "/especialidades/Psicologia_da_Aprendizagem.svg",
+    "category": "Social",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 23,
+    "name": "Psicologia_Organizacional_e_do_Trabalho",
+    "path": "/especialidades/Psicologia_Organizacional_e_do_Trabalho.svg",
+    "category": "Cognitive",
+    "categoria": "Social"
+  },
+  {
+    "id": 24,
+    "name": "Ana\u0301lise_do_Comportamento",
+    "path": "/especialidades/Ana\u0301lise_do_Comportamento.svg",
+    "category": "Behavioral",
+    "categoria": "Social"
+  },
+  {
+    "id": 25,
+    "name": "Psicoterapia_Corporal",
+    "path": "/especialidades/Psicoterapia_Corporal.svg",
+    "category": "Social",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 26,
+    "name": "Psicologia_Forence",
+    "path": "/especialidades/Psicologia_Forence.svg",
+    "category": "Emotional",
+    "categoria": "Social"
+  },
+  {
+    "id": 27,
+    "name": "Psicologia_da_Dor",
+    "path": "/especialidades/Psicologia_da_Dor.svg",
+    "category": "Cognitive",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 28,
+    "name": "Psicologia_do_Comportamento_Alimentar",
+    "path": "/especialidades/Psicologia_do_Comportamento_Alimentar.svg",
+    "category": "Emotional",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 29,
+    "name": "Psicologia_Perinatal",
+    "path": "/especialidades/Psicologia_Perinatal.svg",
+    "category": "Social",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 30,
+    "name": "Manejo_Cli\u0301nico_LGBTQIAPN+",
+    "path": "/especialidades/Manejo_Cli\u0301nico_LGBTQIAPN+.svg",
+    "category": "Social",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 31,
+    "name": "Psicologia_da_Morte_e_do_Luto",
+    "path": "/especialidades/Psicologia_da_Morte_e_do_Luto.svg",
+    "category": "Social",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 32,
+    "name": "Psicologia_Existencial",
+    "path": "/especialidades/Psicologia_Existencial.svg",
+    "category": "Emotional",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 33,
+    "name": "Abordagem_Centrada_na_Pessoa",
+    "path": "/especialidades/Abordagem_Centrada_na_Pessoa.svg",
+    "category": "Social",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 34,
+    "name": "Psicologia_Cli\u0301nica",
+    "path": "/especialidades/Psicologia_Cli\u0301nica.svg",
+    "category": "Social",
+    "categoria": "Social"
+  },
+  {
+    "id": 35,
+    "name": "Psicologia_Anali\u0301tica",
+    "path": "/especialidades/Psicologia_Anali\u0301tica.svg",
+    "category": "Social",
+    "categoria": "Social"
+  },
+  {
+    "id": 36,
+    "name": "Ana\u0301lise_do_Comportamento_Aplicada_(ABA)",
+    "path": "/especialidades/Ana\u0301lise_do_Comportamento_Aplicada_(ABA).svg",
+    "category": "Behavioral",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 37,
+    "name": "Teoria_Cognitiva_da_Personalidade",
+    "path": "/especialidades/Teoria_Cognitiva_da_Personalidade.svg",
+    "category": "Behavioral",
+    "categoria": "Social"
+  },
+  {
+    "id": 38,
+    "name": "Psicologia_Cultural",
+    "path": "/especialidades/Psicologia_Cultural.svg",
+    "category": "Social",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 39,
+    "name": "Psicologia_Humanista",
+    "path": "/especialidades/Psicologia_Humanista.svg",
+    "category": "Behavioral",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 40,
+    "name": "Psicologia_do_Trauma",
+    "path": "/especialidades/Psicologia_do_Trauma.svg",
+    "category": "Emotional",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 41,
+    "name": "Psicoterapia_Breve",
+    "path": "/especialidades/Psicoterapia_Breve.svg",
+    "category": "Behavioral",
+    "categoria": "Emocional"
+  },
+  {
+    "id": 42,
+    "name": "Teoria_do_Apego",
+    "path": "/especialidades/Teoria_do_Apego.svg",
+    "category": "Behavioral",
+    "categoria": "Cognitiva"
+  },
+  {
+    "id": 43,
+    "name": "Psicologia_Juri\u0301dica",
+    "path": "/especialidades/Psicologia_Juri\u0301dica.svg",
+    "category": "Behavioral",
+    "categoria": "Comportamental"
+  },
+  {
+    "id": 44,
+    "name": "Psicologia_Humanista-Existencial",
+    "path": "/especialidades/Psicologia_Humanista-Existencial.svg",
+    "category": "Cognitive",
+    "categoria": "Emocional"
+  }
+]
