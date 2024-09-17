@@ -44,8 +44,6 @@ export function ToolBar({ isLinks }: ToolBarProps) {
                   alt="logo"
                   className="max-w-40 relative"
                 />
-
-                <div className="absolute top-0 right-0 bg-orange-500 rounded-lg h-7 text-white p-1 text-sm">PREMIUM</div>
               </div>
             </Typography>
           </div>

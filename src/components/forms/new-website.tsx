@@ -23,7 +23,16 @@ import { useRouter } from "next/navigation";
 
 export function NewWebsiteForm() {
   const [step, setStep] = useState(0);
-  const { selectedTemplateId, selectedTemplateName, siteName, authorName, crp } = useTemplateStore();
+  const {
+    selectedTemplateId,
+    selectedTemplateName,
+    siteName,
+    authorName,
+    crp,
+    instagram,
+    workingHours,
+  } = useTemplateStore();
+  
   const [isServiceStepValid, setIsServiceStepValid] = useState(false);
   const [isSiteInfoValid, setIsSiteInfoValid] = useState(false);
   const [isTemplateSelected, setIsTemplateSelected] = useState(false);
@@ -52,11 +61,14 @@ export function NewWebsiteForm() {
     } else if (step === 1) {
       setIsSiteInfoValid(!!siteName.trim() && !!selectedTemplateId);
     } else if (step === 2) {
+      const isCrpValid = /^[0-9]{2}\/[0-9]{6}$/.test(crp);
+      const isInstagramValid = /^@[\w.-]+$/.test(instagram); 
+      const isWorkingHoursValid = workingHours.trim() !== "";
       setIsComplementaryValid(
-        !!authorName.trim() && !!crp.trim() && /^[0-9]{2}\/[0-9]{6}$/.test(crp)
+        !!authorName.trim() && isCrpValid && isInstagramValid && isWorkingHoursValid
       );
     }
-  }, [step, siteName, selectedTemplateId, authorName, crp]);
+  }, [step, siteName, selectedTemplateId, authorName, crp, instagram, workingHours]);
 
   const handleNext = async () => {
     if (step < steps.length - 1) {

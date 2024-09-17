@@ -20,6 +20,8 @@ interface NewWebsiteStore {
   cep: string;
   address: Address;
   bio: string;
+  instagram: string,
+	workingHours: string,
   specialties: Specialty[];
   setFormData: (data: Partial<NewWebsiteStore>) => void;
   resetFormData: () => void;
@@ -44,6 +46,8 @@ const defaultFormData: NewWebsiteStore = {
   address: defaultAddress,
   bio: "",
   specialties: [],
+  instagram: "",
+	workingHours: "",
   setFormData: () => {},
   resetFormData: () => {},
 };
