@@ -1,24 +1,17 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-
 import { Box, Button, Paper, Stepper, Step, StepLabel } from "@mui/material";
-
 import { _GET_ALL_TEMPLATES } from "@/_services/GET_ALL_WEBSITES_TEMPLATES";
-
 import { TemplateSelectionStep } from "@/components/steps/new-website/template-step";
 import { TemplateCardSkeleton } from "../cards/template-site-card-skeleton";
 import { SiteInformationStep } from "../steps/new-website/site-information-step";
 import { ComplementaryStep } from "../steps/new-website/complementary-step";
 import { ServiceStep } from "../steps/new-website/service-step";
 import { useTemplateStore } from "@/_stores/new-website-store";
-
 import AboutYouStep from "../steps/new-website/about-you-step";
-
 import api from "@/_services/API";
-
 import { useSession } from "next-auth/react";
-
 import { useRouter } from "next/navigation";
 
 export function NewWebsiteForm() {
@@ -31,6 +24,7 @@ export function NewWebsiteForm() {
     crp,
     instagram,
     workingHours,
+    email, // Adicione o email aqui
   } = useTemplateStore();
   
   const [isServiceStepValid, setIsServiceStepValid] = useState(false);
@@ -38,11 +32,13 @@ export function NewWebsiteForm() {
   const [isTemplateSelected, setIsTemplateSelected] = useState(false);
   const [isComplementaryValid, setIsComplementaryValid] = useState(false);
   const [isAboutYouValid, setIsAboutYouValid] = useState(false);
+  const [isEmailValid, setIsEmailValid] = useState(false); // Estado para e-mail
 
   const [loading, setLoading] = useState(false);
 
   const { data: session } = useSession();
-
+  const { push } = useRouter();
+  
   const steps = [
     "Template",
     "Nome do site",
@@ -52,8 +48,6 @@ export function NewWebsiteForm() {
   ];
 
   const { data: templates, isLoading } = _GET_ALL_TEMPLATES();
-  
-  const { push } = useRouter();
 
   useEffect(() => {
     if (step === 0) {
@@ -62,13 +56,19 @@ export function NewWebsiteForm() {
       setIsSiteInfoValid(!!siteName.trim() && !!selectedTemplateId);
     } else if (step === 2) {
       const isCrpValid = /^[0-9]{2}\/[0-9]{6}$/.test(crp);
-      const isInstagramValid = /^@[\w.-]+$/.test(instagram); 
+      const isInstagramValid = /^@[\w.-]+$/.test(instagram);
       const isWorkingHoursValid = workingHours.trim() !== "";
       setIsComplementaryValid(
         !!authorName.trim() && isCrpValid && isInstagramValid && isWorkingHoursValid
       );
+    } else if (step === 3) {
+      setIsServiceStepValid(true); // Supondo que a validação está ok para o ServiceStep
+    } else if (step === 4) {
+      setIsAboutYouValid(true); // Supondo que a validação está ok para o AboutYouStep
     }
-  }, [step, siteName, selectedTemplateId, authorName, crp, instagram, workingHours]);
+    // Validação do e-mail para o último passo
+    setIsEmailValid(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email));
+  }, [step, siteName, selectedTemplateId, authorName, crp, instagram, workingHours, email]);
 
   const handleNext = async () => {
     if (step < steps.length - 1) {
@@ -157,7 +157,8 @@ export function NewWebsiteForm() {
               (step === 1 && !isSiteInfoValid) ||
               (step === 2 && !isComplementaryValid) ||
               (step === 3 && !isServiceStepValid) ||
-              (step === 4 && !isAboutYouValid)
+              (step === 4 && !isAboutYouValid) ||
+              (step === steps.length - 1 && !isEmailValid) // Validação do e-mail para a última etapa
             }
           >
             {loading

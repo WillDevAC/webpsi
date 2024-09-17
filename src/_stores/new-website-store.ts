@@ -17,9 +17,11 @@ interface NewWebsiteStore {
   authorName: string;
   crp: string;
   serviceType: string;
+  image: File | null | string;
   cep: string;
   address: Address;
   bio: string;
+  email: string;
   instagram: string,
 	workingHours: string,
   specialties: Specialty[];
@@ -41,8 +43,10 @@ const defaultFormData: NewWebsiteStore = {
   authorName: "",
   selectedTemplateName: "",
   crp: "",
+  email: "",
   serviceType: "online",
   cep: "",
+  image: null,
   address: defaultAddress,
   bio: "",
   specialties: [],
